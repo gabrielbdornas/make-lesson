@@ -63,3 +63,9 @@ $ sudo apt-get install python3-tk
 clean :
   rm -f *.dat
 ```
+
+- Modificação na linha 21 do módulo testzipf.py. Necessário para adaptar a criação da nova estrutura do projeto, pasta data
+```
+# linha original
+bookname = input_file[:-4]
+```
