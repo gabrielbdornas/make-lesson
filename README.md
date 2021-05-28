@@ -3,6 +3,26 @@ Automation and Make
 
 - Material de estudo de automação e Make retirado de tutoriais [Carpentry](http://swcarpentry.github.io/make-novice/)
 - [Make documentation](https://www.gnu.org/software/make/)
+
+- Instalação e utilização do estudo
+```
+# Clonando repositório
+$ git clone git@github.com:gabrielbdornas/make-lesson.git
+
+# Instalando variável de ambiente (utilize outra versão python caso necessário)
+$ python3.9 -m venv venv
+
+# Criação arquivo .gitignore e excluindo a pasta venv do controle git
+$ touch .gitignore && echo "venv" >> .gitignore
+
+# Ativando ambiente
+$ source venv/bin/activate
+
+# Instalando dependências necessárias (erros relatados abaixo)
+(venv) ➜  make-lesson git:(main) ✗ pip install numpy
+(venv) ➜  make-lesson git:(main) ✗ pip install matplotlib
+```
+
 - Observações durante o estudo
   - Modifiquei a estrutura inicial do projeto para deixar a pasta mais organizada. Diferença dos comandos em relação ao sugerido nos exercícios:
 ```
