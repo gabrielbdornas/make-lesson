@@ -56,3 +56,10 @@ python: can't open file '/home/gabrielbdornas/code/gabrielbdornas/make-lesson/sc
 ```
 $ sudo apt-get install python3-tk
 ```
+  - [Incremental build](http://swcarpentry.github.io/make-novice/reference#incremental-build) - Para construir um arquivo make avalia a última atualização dos arquivos alvo e suas dependências. Caso alguma dependência tenha sido atualizada então make executa novamente o comando para recriar o alvo
+  - [phony target](http://swcarpentry.github.io/make-novice/reference#phony-target), mostra ao make que o comando não construirá nada (para seguir uma sequência de scripts, por exemplo)
+```
+.PHONY : clean
+clean :
+  rm -f *.dat
+```
