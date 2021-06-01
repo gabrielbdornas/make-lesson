@@ -89,3 +89,8 @@ clean :
 # linha original
 bookname = input_file[:-4]
 ```
+
+- Somente mostrar o comando que será rodado
+```
+$ make -n <comando>
+```
