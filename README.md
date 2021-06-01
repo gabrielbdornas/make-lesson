@@ -8,3 +8,4 @@ Automation and Make
   - [Makefile](https://github.com/gabrielbdornas/make-lesson/tree/makefile)
   - [Variáveis Automáticas](https://github.com/gabrielbdornas/make-lesson/tree/automatic-variable)
   - [Dependências em data e código](https://github.com/gabrielbdornas/make-lesson/tree/dependencies-data-code)
+  - [Padrões](https://github.com/gabrielbdornas/make-lesson/tree/pattern-rules)
