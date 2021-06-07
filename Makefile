@@ -1,16 +1,21 @@
 include config.mk
 
+.PHONY : variables
+variables:
+	@echo TXT_FILES: $(TXT_FILES)
+	@echo DAT_FILES: $(DAT_FILES)
+
 # Generate summary table.
-results.txt : $(ZIPF_SRC) data/isles.dat data/abyss.dat data/last.dat data/sierra.dat
-	$(ZIPF_EXE) data/*.dat > $@
+results.txt : $(ZIPF_SRC) $(DAT_FILES)
+	$(ZIPF_EXE) $(DAT_FILES) > $@
 
 .PHONY : dats
-dats : data/isles.dat data/abyss.dat data/last.dat data/sierra.dat
+dats : $(DAT_FILES)
 
 data/%.dat : books/%.txt $(COUNT_SRC)
-	$(COUNT_EXE) $< data/$*.dat
+	$(COUNT_EXE) $< $@
 
 .PHONY : clean
 clean :
-	rm -f data/*.dat
+	rm -f $(DAT_FILES)
 	rm -f results.txt
