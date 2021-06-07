@@ -10,3 +10,4 @@ Automation and Make
   - [Dependências em data e código](https://github.com/gabrielbdornas/make-lesson/tree/dependencies-data-code)
   - [Padrões](https://github.com/gabrielbdornas/make-lesson/tree/pattern-rules)
   - [Variáveis](https://github.com/gabrielbdornas/make-lesson/tree/variables)
+  - [Funções](https://github.com/gabrielbdornas/make-lesson/tree/functions)
